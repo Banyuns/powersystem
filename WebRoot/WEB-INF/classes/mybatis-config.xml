@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 是否打开延迟加载 -->
+	<settings>
+		<setting name="lazyLoadingEnabled" value="false"></setting>
+	</settings>
+<!-- 配置实体类，然后写语句传实体类参数的话直接写类名即可不用写完整路径 -->
+	<typeAliases>
+		<package name="cn.pojo"/>
+	</typeAliases>
+</configuration>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+ 
+	<struts>
+			<package name="default" namespace="/" extends="struts-default">
+				<action name="select" class="cn.action.UserAction" method="showUserAll">
+					<result name="yes">WEB-INF/jsp/MyJsp.jsp</result>
+				</action>
+			</package>
+	</struts>
