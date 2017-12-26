@@ -1,25 +1,22 @@
-package entity;
+package cn.powersystem.entity;
 
 import java.util.Date;
 
-public class Ps_solver_detail {
-	//消缺任务-消缺员明细表(ps_solver_detail)
+public class Ps_solvetask_detail {
+	//消缺任务子表(ps_solvetask_detail) 
 	private int id;
 	private int taskId;//主表任务ID
-	private String solverCode;//消缺员CODE
-	private String solverName;//消缺员名称
+	private int inspectionTaskDelId;//巡检任务子表ID
 	private String createdBy;//创建者
 	private Date creationTime;//创建时间
 	private Date lastUpdateTime;//最后修改时间
 	
-	public Ps_solver_detail(int id, int taskId, String solverCode,
-			String solverName, String createdBy, Date creationTime,
-			Date lastUpdateTime) {
+	public Ps_solvetask_detail(int id, int taskId, int inspectionTaskDelId,
+			String createdBy, Date creationTime, Date lastUpdateTime) {
 		super();
 		this.id = id;
 		this.taskId = taskId;
-		this.solverCode = solverCode;
-		this.solverName = solverName;
+		this.inspectionTaskDelId = inspectionTaskDelId;
 		this.createdBy = createdBy;
 		this.creationTime = creationTime;
 		this.lastUpdateTime = lastUpdateTime;
@@ -36,17 +33,11 @@ public class Ps_solver_detail {
 	public void setTaskId(int taskId) {
 		this.taskId = taskId;
 	}
-	public String getSolverCode() {
-		return solverCode;
+	public int getInspectionTaskDelId() {
+		return inspectionTaskDelId;
 	}
-	public void setSolverCode(String solverCode) {
-		this.solverCode = solverCode;
-	}
-	public String getSolverName() {
-		return solverName;
-	}
-	public void setSolverName(String solverName) {
-		this.solverName = solverName;
+	public void setInspectionTaskDelId(int inspectionTaskDelId) {
+		this.inspectionTaskDelId = inspectionTaskDelId;
 	}
 	public String getCreatedBy() {
 		return createdBy;
@@ -67,5 +58,4 @@ public class Ps_solver_detail {
 		this.lastUpdateTime = lastUpdateTime;
 	}
 	
-	 
 }

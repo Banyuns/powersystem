@@ -1,4 +1,4 @@
-package entity;
+package cn.powersystem.entity;
 
 import java.util.Date;
 

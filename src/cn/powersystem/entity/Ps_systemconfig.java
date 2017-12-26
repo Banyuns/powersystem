@@ -1,4 +1,4 @@
-package entity;
+package cn.powersystem.entity;
 
 public class Ps_systemconfig {
 	//系统配置表(ps_systemconfig) 

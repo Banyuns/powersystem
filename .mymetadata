@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="disanqilianxi"
+  name="powersystem"
   id="myeclipse.1513918359126"
-  context-root="/disanqilianxi"
+  context-root="/powersystem"
   j2ee-spec="5.0"
-  archive="disanqilianxi.war">
+  archive="powersystem.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>

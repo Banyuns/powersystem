@@ -1,4 +1,4 @@
-package entity;
+package cn.powersystem.entity;
 
 public class Ps_logs {
 	private int id;

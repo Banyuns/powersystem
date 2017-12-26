@@ -1,4 +1,4 @@
-package cn.service;
+package cn.powersystem.service;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import cn.dao.UserMapper;
+import cn.powersystem.dao.UserMapper;
+import cn.powersystem.entity.Ps_user;
 
-import cn.pojo.testuser;
 @Service
 public class UserServiceImpl implements UserService {
 		
@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
 
 
 
-	public List<testuser> userList() {
+	public List<Ps_user> userList() {
 		return userDao.userList();
 	}
 
