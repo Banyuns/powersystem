@@ -32,7 +32,7 @@ public class UserAction extends ActionSupport {
 	}
 
 	public String showUserAll(){
-		System.out.println("��Һ�");
+		System.out.println("-.-.-.-.-");
 		 ActionContext actionContext = ActionContext.getContext();  
 	      Map session = actionContext.getSession();  
 		List<Ps_user> lists=userService.userList();
